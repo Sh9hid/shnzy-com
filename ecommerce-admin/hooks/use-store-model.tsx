@@ -1,14 +1,14 @@
+// hooks/use-store-modal.tsx
 import { create } from "zustand";
 
-interface useStoreModalStore {
-    isOpen: boolean;
-    onOpen: () => void;
-    onClose: () => void;
-};
+interface UseStoreModalStore {
+  isOpen: boolean;
+  onOpen: () => void;
+  onClose: () => void;
+}
 
-
-export const useStoreModal= create<useStoreModalStore>((set) => ({
-    isOpen: false,
-    onOpen: () => set({ isOpen: true }),
-    onClose: () => set({ isOpen: false }),
-}))
+export const useStoreModal = create<UseStoreModalStore>((set) => ({
+  isOpen: false,
+  onOpen: () => set({ isOpen: true }),
+  onClose: () => set({ isOpen: false }),
+}));

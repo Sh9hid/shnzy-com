@@ -11,7 +11,7 @@ import { Modal } from "../ui/modal";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "../ui/form";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import toast from "react-hot-toast";
 
 
@@ -37,7 +37,8 @@ export const StoreModal = () => {
             
             const response = await axios.post('/api/stores', values);
             
-            toast.success("Store created.");
+            toast.success("Store created")
+            window.location.assign(`/${response.data.id}`);
             
             
             
