@@ -15,7 +15,6 @@ import { Input } from "../../../../../../../components/ui/input";
 import toast from "react-hot-toast";
 import axios from "axios";
 import { AlertModal } from "../../../settings/components/alert-modal";
-import { ApiAlert } from "../../../../../../../components/ui/api-alert";
 import { useOrigin } from "../../../../../../../hooks/use-origin";
 import { Billboard } from "@prisma/client";
 import ImageUpload from "../../../../../../../components/ui/image-upload";
